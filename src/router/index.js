@@ -12,6 +12,11 @@ const routes = [
     name: 'books',
     component: BooksView
   },
+  {
+    path: '/login',
+    name: 'login',
+    component: LoginView
+  }
 ]
 
 const router = new VueRouter({
