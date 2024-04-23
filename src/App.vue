@@ -1,7 +1,6 @@
-
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
+    <v-app-bar app color="secondary" dark>
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
@@ -33,7 +32,7 @@
 
 <script>
 import BottomNavbar from "./components/BottomNavbar.vue";
-import axios from 'axios'
+import axios from "axios";
 
 export default {
   components: { BottomNavbar },
@@ -44,7 +43,7 @@ export default {
   }),
   methods: {
     login1() {
-      this.$router.push({ name: 'login' });
+      this.$router.push({ name: "login" });
     },
   },
 };
