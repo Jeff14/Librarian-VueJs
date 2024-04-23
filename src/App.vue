@@ -23,7 +23,7 @@
       </v-btn>
     </v-app-bar>
 
-    <v-main>
+    <v-main class="main-container">
       <router-view />
       <bottom-navbar></bottom-navbar>
     </v-main>
@@ -51,4 +51,9 @@ export default {
 
 <style>
 @import url("@/assets/styles.css");
+.main-container {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiVWg2E_wAqMMfOnAmWmuVK2o4LR9ogwd3ZA&usqp=CAU"); /* Specify the path to your background image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+}
 </style>
