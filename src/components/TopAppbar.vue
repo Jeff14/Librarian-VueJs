@@ -4,15 +4,15 @@
       <v-col cols="10">
         <h3>{{ title }}</h3>
       </v-col>
+    </v-row>
+    <v-row>
+      <v-col
+        ><v-text-field v-model="searchQuery" label="Search"></v-text-field
+      ></v-col>
       <v-col cols="2" class="text-right">
-        <v-btn @click="addButtonClick"><v-icon>mdi-plus</v-icon></v-btn>
+        <v-btn @click="addButtonClick"><v-icon>mdi-search-web</v-icon></v-btn>
       </v-col>
     </v-row>
-    <v-text-field
-      v-model="searchQuery"
-      label="Search"
-      append-outer-icon="mdi-search-web"
-    ></v-text-field>
   </div>
 </template>
 
